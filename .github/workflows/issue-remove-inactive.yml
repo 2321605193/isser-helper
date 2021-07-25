@@ -7,16 +7,16 @@ on:
     types: [created, edited]
 
 jobs: 
-	remove-inactive:
-		runs-on: ubuntu-latest
-		steps: 
-			- name: remove inactive
-				if: github.event.issue.state == 'open'
-				uses: actions-cool/issues-helper@v1.2
-				with: 
-					actions: 'remove-labels'
-					issue-number: ${{ github.event.issue.number }}
-          labels: 'Inactive, needs-more-info'
+  remove-inactive:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: remove inactive
+        if: github.event.issue.state == 'open'
+        uses: actions-cool/issues-helper@v1.2
+        with: 
+          actions: 'remove-labels'
+	  issue-number: ${{ github.event.issue.number }}
+	  labels: 'Inactive, needs-more-info'
 
 
 
