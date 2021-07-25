@@ -1,22 +1,22 @@
 name: Issue Remove Inactive
 
 on:
-  issues: 
+  issues:
     types: [edited, reopened]
-  issue_comment: 
+  issue_comment:
     types: [created, edited]
 
-jobs: 
+jobs:
   remove-inactive:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: remove inactive
         if: github.event.issue.state == 'open'
         uses: actions-cool/issues-helper@v1.2
-        with: 
+        with:
           actions: 'remove-labels'
-	  issue-number: ${{ github.event.issue.number }}
-	  labels: 'Inactive, needs-more-info'
+          issue-number: ${{ github.event.issue.number }}
+          labels: 'Inactive, needs-more-info'
 
 
 
