@@ -1,10 +1,10 @@
 name: Issue Remove Inactive
 
 on:
-	issues: 
-		types: [edited, reopened]
-  	issue_comment: 
-    	types: [created, edited]
+  issues: 
+    types: [edited, reopened]
+  issue_comment: 
+    types: [created, edited]
 
 jobs: 
 	remove-inactive:
