@@ -1,3 +1,4 @@
+# 每月1号1时，生成上一个月的issue统计
 name: Issue Month Statistics
 
 on:

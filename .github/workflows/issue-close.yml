@@ -1,3 +1,4 @@
+# 关闭增加了 Need Reproduce 标签且 7 天未活跃的所有 issue
 name: Issue Close
 
 # 定时触发：每天 UTC 0 点，即北京时间 8 点。
