@@ -2,6 +2,7 @@ pullRequest:
   preview:
     replay: |
       This [preview](https://preview-{number}-idux.surge.sh/) will be available after the AzureCI is passed.
+
 issue:
   invalid:
     mark: idux-issue-helper
